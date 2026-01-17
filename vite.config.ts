@@ -1,10 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/v-elite-system/",
   plugins: [react()],
+  base: "/v-elite-system/", // <--- ISSO AQUI É OBRIGATÓRIO PRA NÃO FICAR TELA PRETA
   build: {
-    outDir: "docs", // <--- O TRUQUE TÁ AQUI
+    outDir: "docs", // <--- ISSO AQUI FAZ FUNCIONAR O TRUQUE DA PASTA DOCS
   },
 });
